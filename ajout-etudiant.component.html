@@ -1,0 +1,19 @@
+<form (submit)="onSubmit()">
+    <p>entrer les cordonnés de l'etudiant</p>
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" name="prenom" [(ngModel)]="student.prenom" required>
+    <br>
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" [(ngModel)]="student.nom" required>
+    <br>
+    <label for="dateNaissance">Date de Naissance:</label>
+    <input type="date" id="dateNaissance" name="dateNaissance" [(ngModel)]="student.dateNaissance" required>
+    <br>
+    <label for="cin">CIN:</label>
+    <input type="text" id="cin" name="cin" [(ngModel)]="student.cin" required>
+    <br>
+    <label for="niveau">Niveau:</label>
+    <input type="text" id="niveau" name="niveau" [(ngModel)]="student.niveau" required>
+    <br>
+    <button type="submit">Ajouter </button>
+  </form>
