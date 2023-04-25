@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	background: rgb(20, 81, 162);
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-family: sans-serif;
+}
