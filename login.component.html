@@ -1,0 +1,17 @@
+
+	<div class="container">
+		<form class="login_form" action="admin.component.html"  name="form" onsubmit="">
+		<h1 class="label">User Login</h1>
+		<div>
+		  <h3>Identifiant</h3></div>
+		  <input type="password" formControlName="password" placeholder="password">
+	
+		<div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+		  <div *ngIf="loginForm.controls['password'].errors?.['required']">Mot de passe requis</div>
+		  <div *ngIf="loginForm.controls['password'].errors?.['minlength'] || loginForm.controls['password'].errors?.['maxlength']">Le mot de passe doit contenir exactement 8 chiffres</div>
+		  <div *ngIf="loginForm.controls['password'].errors?.['pattern']">Le mot de passe doit contenir uniquement des chiffres</div>
+		</div>
+	  <br>
+		<button type="submit">Login</button>
+	  </form>
+	</div>

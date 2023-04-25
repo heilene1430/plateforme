@@ -1,0 +1,21 @@
+*{
+	padding: 0;
+	margin: 30px;
+	
+}
+a{
+	padding-top: 40px;
+	
+    color: black;
+	font-size: x-large;
+}
+.container-fluid {
+	position:fixed;
+	margin-top: 0;
+	width: 550px;
+	height: auto;
+	right:0;
+	
+    border-color: white;
+    background: rgb(20, 81, 162);
+}
